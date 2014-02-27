@@ -1,0 +1,16 @@
+## Fabricio Villalobos (2014)
+
+The R functions here provided were used in the analyses of Villalobos et al. 2014. Basic and Applied Ecology. http://dx.doi.org/10.1016/j.baae.2013.11.001
+
+All functions have to be working (loaded) in the R workspace before running the simulations. Therefore, be sure to load them before doing any analyses. This should be done in the following order:
+
+1. nicheRange() --in "niche_onerange.r"
+2. nicheManyRanges() --in "niche_manyranges.r"## Actually, this one is not needed for running the simulations of NICHE CONSERVATISM. It is for the simulation of ranges with environmental control only
+3. nicheRangesVectors() --in "niche_manyrange_vectos.r" ## Actually, this one is not needed for running the simulations of NICHE CONSERVATISM. It is for the simulation of ranges with environmental control only
+4. nicheFirst() --in "niche_conservatism_first.r"
+5. nicheConserv() --in "niche_conservatism_all.r"
+6. nicheConservSims() --in "niche_conservatims_simulations.r"
+
+The functions in the file "neighbors_anyMatrix.r" --neighbors()-- and "mapping_niche_simulations.r" --spp_matrix_mapping()-- are optional. 
+The neighbors() function generate the 8 (or less) nearest neighbors of a particular cell/site.
+The spp_matrix_mapping() is used for checking (mapping) individual simulated ranges.
