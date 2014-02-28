@@ -12,5 +12,7 @@ All functions have to be working (loaded) in the R workspace before running the 
 6. nicheConservSims() --in "niche_conservatims_simulations.r"
 
 The functions in the file "neighbors_anyMatrix.r" --neighbors()-- and "mapping_niche_simulations.r" --spp_matrix_mapping()-- are optional. 
-The neighbors() function generate the 8 (or less) nearest neighbors of a particular cell/site.
+The neighbors() function generates the 8 (or less) nearest neighbors of a particular cell/site.
 The spp_matrix_mapping() is used for checking (mapping) individual simulated ranges.
+
+The tables "vecinos" and "ambientales" are examples of how these tables should be in order to fed them into the functions (as arguments). Note that both tables include ALL cells within the original squared matrix (geographic domain with 0's and 1's) and not only those within land or region of interest. In these examples, the total number of cells were (175 rows x 175 columns) = 30625. 
